@@ -17,6 +17,7 @@ body {
 
 .box1 {
     background-color: seagreen;
+    text-align: justify;
 }
 
 .box2 {
@@ -30,6 +31,7 @@ body {
 .box2 {
     transition-property: all;
     transition-duration: 2s;
+    text-align: justify;
 }
 
 .square1, .square2 {
@@ -38,6 +40,19 @@ body {
     width: 150px;
     margin: 100;
     position: absolute;
+}
+
+.gif {
+    display: flex;
+    margin: 15px;
+}
+
+.gif p {
+    justify-content: left;
+    margin: 10px;
+    font-size: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: indigo;
 }
 
 .image {
@@ -50,23 +65,17 @@ img {
     height: 50%;
 }
 
-.combinado {
-    background-color: violet;
-    height: 75px;
-    width: 75px;
-    margin: 50px auto;
-    transition: all 3s;
-}
-
-.combinado:hover {
-    transform: rotate(90deg) scale(3) translateX(80px);
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
 }
 
 .animaciones {
     width: 100px;
     height: 100px;
     margin: 50px auto;
-    background-color: yellow;
+    background-color: orange;
 }
 
 .animaciones:hover {
@@ -80,7 +89,7 @@ img {
     15% {border-radius: 50%;
     }
 
-    50% {background-color: orange;
+    50% {background-color: yellow;
     }
 
     75% {width: 600px;
