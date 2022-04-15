@@ -1,0 +1,88 @@
+body {
+    background-color: skyblue;
+}
+
+.header {
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border-radius: 6px;
+    height: 40px;
+    width: 80px;
+    margin: 60px auto;
+}
+
+.box1 {
+    background-color: seagreen;
+}
+
+.box2 {
+    background-color: steelblue;
+}
+
+.box:hover{
+    transform: scale(4);
+}
+
+.box2 {
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.square1, .square2 {
+    border-radius: 8px;
+    height: 150px;
+    width: 150px;
+    margin: 100;
+    position: absolute;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.combinado {
+    background-color: violet;
+    height: 75px;
+    width: 75px;
+    margin: 50px auto;
+    transition: all 3s;
+}
+
+.combinado:hover {
+    transform: rotate(90deg) scale(3) translateX(80px);
+}
+
+.animaciones {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    background-color: yellow;
+}
+
+.animaciones:hover {
+    animation: change-color 6s;
+}
+
+@keyframes change-color {
+    0% {background-color: aqua;
+    }
+
+    15% {border-radius: 50%;
+    }
+
+    50% {background-color: orange;
+    }
+
+    75% {width: 600px;
+    }
+}
